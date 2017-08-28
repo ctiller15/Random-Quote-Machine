@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Random quote machine</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <body>
+  <head>
+  <!--Grabbing my font families using google apis.-->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300i|Merriweather:300i" rel="stylesheet">
+  <div class="fullscreen-bg">
+    <video loop muted autoplay class="fullscreen-bg-video">
+      <source src="https://res.cloudinary.com/unbounded/video/upload/v1486004710/12918404_ecf9aa.mp4" type=video/mp4>
+    </video>
+  </div>
+  </head>
+  <!--The outer container for our bootstrap-->
+  <div class="container">
+    <!--The first row. It contains the h1 telling the user what this page is and some quick instructions for the page.-->
+    <div class="row">
+      <div class="intro col-xs-12">
+        <h1 class="text-center">Random Quote Machine</h1>
+        <p class="text-center instructions">Press the button and get a random quote!</p>
+      </div>
+    </div>
+    <!--An outer well. Purely there for styling purposes.-->
+    <div class="outerwell well well-lg">
+      <div class="row">
+        <div class="col-xs-12">
+          <!--An inner well used to hold both the quote as well as the author.-->
+          <div class="innerwell well well-lg">
+            <div id="quote">
+              <p class="quote text-center">Insert quote here!</p>
+              <p class="author text-right">Author name</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--A row to hold all of the necessary buttons. It holds the quote button, a button that copies the text to the clipboard, as well as a button that pastes the quote on to twitter.-->
+      <div class="row">
+        <div class="col-xs-1"></div>
+        <!--The html for the twitter button. If pressed before a quote is given, it will instead post "blank" to twitter.-->
+        <a href="https://twitter.com/intent/tweet?text=blank" class ="col-xs-2 btn btn-info btn-lg tweet" data-toggle="tooltip" data-placement="bottom" title="Share quote to Twitter"><span class="hidden-xs">Tweet</span> <span class="fa fa-twitter" aria-hidden="true"></span></a>
+        <div class="col-xs-1"></div>
+        <!--This button copies the text from the quote, as well as the author directly to the clipboard if the user feels like posting the quote elsewhere. It uses clipboard.JS to do so.-->
+        <button class ="copyButton col-xs-2 btn btn-lg" data-clipboard-action="copy" data-clipboard-target="#quote" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><span class="hidden-xs">Copy</span> <span class="copy fa fa-clipboard" aria-hidden="true"</span></button>
+        
+        <div class="col-xs-1"></div>
+        <!--The most important button on here, it switches the quote with the forismatic API.-->
+        <button class="col-xs-5 btn btn-primary btn-lg quoteButton" data-toggle="tooltip" data-placement="bottom" title="Generate a new quote"><span class="hidden-xs">New quote</span> <span class="fa fa-comment" aria-hidden="true"</button>
+      </div>
+    </div>
+  </div>
+    <footer class = "row">
+      <div class="col-xs-2">
+      </div>
+      <div class="col-xs-3">
+        <p>Forismatic's api does not work over https. Make sure to use the <a href="https://codepen.io/Ctiller15/pen/BpmQBx" target="_top">http version of this webpage</a> instead.
+        </p>
+      </div>
+      <div class="col-xs-1">
+      </div>
+      <div class="col-xs-2">
+      This pen was created by Christopher Tiller
+      </div>
+      <div class="col-xs-1">
+      </div>
+      <div class="col-xs-3">
+        Video provided by <a href="https://www.shutterstock.com/" target="_blank">Shuttershock</a>
+      </div>
+    </footer>
+</body>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

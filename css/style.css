@@ -1,0 +1,80 @@
+
+
+body{
+    background-color: rgba(206,255,186,.3);
+}
+
+
+.intro{
+  color: #000000;
+  text-shadow: -1px 0 #9FFF78, 0 1px #9FFF78, 1px 0 #9FFF78, 0 -1px #9FFF78;
+    /*background-color: rgba(206,255,186,.3);*/
+}
+
+h1{
+  font: 4em "Merriweather Sans", Arial, Sans, Serif;
+}
+
+p{
+  font: 3em Merriweather, "Merriweather Sans", Arial, Sans, Serif;
+}
+
+
+.fullscreen-bg{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg-video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+
+.outerwell{
+  background-color: #CEFFBA;
+}
+
+.innerwell{
+  background-color: #FFFFFF;
+}
+
+footer p{
+  font: 1em serif;
+}
+.tooltip-inner{
+  background-color: #A6FF82;
+  color: #000000;
+}
+.tooltip.bottom > .tooltip-arrow {
+  border-bottom-color: #A6FF82;
+}
+
+a:hover{
+  color: #00F3EE;
+}
+
+.copyButton:hover{
+  background-color: #FFFFFF;
+}
+
+.quoteButton{
+  background-color: #AB57A4;
+}
+.quoteButton:hover{
+  background-color: #FFA1F7;
+}
+
+.tweet:hover{
+  background-color: #00FFFF;
+}
